@@ -1,4 +1,5 @@
 import os
+import ffmpeg
 import whisper
 from yt_dlp import YoutubeDL
 from pydantic import BaseModel
@@ -162,6 +163,7 @@ def youtube_download(url: str):
         "format": "bestaudio/best",
         'outtmpl': 'tmp/%(id)s.%(ext)s',
         "postprocessors": [{
+            "fmpeg-location": ffmpeg.,
             "key": "FFmpegExtractAudio",
             "preferredcodec": "mp3",
             "preferredquality": "192",
