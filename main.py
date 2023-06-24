@@ -163,7 +163,6 @@ def youtube_download(url: str):
         "format": "bestaudio/best",
         'outtmpl': 'tmp/%(id)s.%(ext)s',
         "postprocessors": [{
-            "fmpeg-location": ffmpeg.,
             "key": "FFmpegExtractAudio",
             "preferredcodec": "mp3",
             "preferredquality": "192",
