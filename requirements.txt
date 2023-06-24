@@ -1,4 +1,5 @@
 openai-whisper
+fmpeg-python
 uvicorn
 fastapi
 yt-dlp
